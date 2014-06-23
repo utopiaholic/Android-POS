@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/item_wrapper"
+    android:background="@drawable/orange_button">
+    
+	<TextView
+         style="@style/h3_product"
+         android:maxLength="20"
+         android:id="@+id/prodBtnItemName"/>
+
+     <TextView
+         style="@style/h3_price"
+         android:id="@+id/prodBtnItemPrice"/>
+</LinearLayout>

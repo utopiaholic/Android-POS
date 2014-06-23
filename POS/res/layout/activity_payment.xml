@@ -1,0 +1,231 @@
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    xmlns:app="http://schemas.android.com/apk/res/com.malabon.pos"
+	    tools:context=".PaymentActivity"
+        android:id="@+id/Wrapper"
+        style="@style/popup"
+        android:layout_width="wrap_content" >
+		
+        <TextView
+            style="@style/H1"
+            android:text="@string/Payment" />
+
+        <TextView
+            style="@style/H2"
+            android:id="@+id/paymentCustomerName"
+            android:text="Customer Name" />
+
+        <LinearLayout
+            style="@style/wrapper_horizontal" >
+            
+            <android.support.v7.widget.GridLayout
+	            style="@style/wrapper_grid_common"
+	            app:rowCount="4"
+	            app:columnCount="2" >
+                
+                <Button
+                    android:id="@+id/btn1000"
+                    android:text="@string/p1000"
+                    style="@style/btn_gray_150"
+                    app:layout_row="0"
+                    app:layout_column="0" 
+                    android:onClick="clickNumber"/>
+
+                <Button
+                    android:id="@+id/btn100"
+                    android:text="@string/p100"
+                    style="@style/btn_gray_150"
+                    app:layout_row="1"
+                    app:layout_column="0" 
+                    android:onClick="clickNumber"/>
+
+                <Button
+                    android:id="@+id/btn20"
+                    android:text="@string/p20"
+                    style="@style/btn_gray_150"
+                    app:layout_row="2"
+                    app:layout_column="0" 
+                    android:onClick="clickNumber"/>
+
+                <Button
+                    android:id="@+id/btn5"
+                    android:text="@string/p5"
+                    style="@style/btn_gray_150"
+                    app:layout_row="3"
+                    app:layout_column="0" 
+                    android:onClick="clickNumber"/>
+                
+                <Button
+                    android:id="@+id/btn500"                    
+                    android:text="@string/p500"
+                    style="@style/btn_gray_150"
+                    app:layout_row="0"
+                    app:layout_column="1" 
+                    android:onClick="clickNumber"/>
+
+                <Button
+                    android:id="@+id/btn50"
+                    android:text="@string/p50"
+                    style="@style/btn_gray_150"
+                    app:layout_row="1"
+                    app:layout_column="1" 
+                    android:onClick="clickNumber"/>
+
+                <Button
+                    android:id="@+id/btn10"
+                    android:text="@string/p10"
+                    style="@style/btn_gray_150"
+                    app:layout_row="2"
+                    app:layout_column="1" 
+                    android:onClick="clickNumber"/>
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:text="@string/p1"
+                    style="@style/btn_gray_150"
+                    app:layout_row="3"
+                    app:layout_column="1" 
+                    android:onClick="clickNumber"/>
+
+            </android.support.v7.widget.GridLayout>
+			
+            <LinearLayout style="@style/wrapper_vertical">
+            <TableLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" >
+
+                <TableRow
+                    style="@style/table_row" >
+
+                    <TextView
+                        style="@style/h3_subtotal"
+                        android:text="@string/Total" />
+
+                    <TextView
+                        android:text="@string/defaultNum"
+                        android:id="@+id/balTotal"
+                        style="@style/h3_subtotal_amt" />
+
+                </TableRow>
+                    
+                <TableRow
+                   style="@style/table_row_total" >
+
+                   <TextView
+                       style="@style/h3_item"
+                       android:text="@string/Cash"
+                       android:textSize="20sp"
+                       android:textColor="#999" />
+
+                   <TextView
+                       style="@style/h3_item"
+                       android:id="@+id/paymentCash"
+                       android:text="@string/defaultNum" />
+
+               </TableRow>            
+
+                <TableRow
+                    style="@style/table_row" >
+
+                    <TextView
+                        style="@style/h3_subtotal"
+                        android:text="@string/Change" />
+
+                    <TextView
+                        style="@style/h3_subtotal_amt"
+                        android:id="@+id/paymentChange"
+	                    android:text="@string/defaultNum" />
+
+                </TableRow>
+            </TableLayout>
+            
+            <Spinner
+	            android:id="@+id/cmbDiscounts"
+	            android:layout_width="260dp"
+	            android:layout_height="50dp"
+	            android:layout_gravity="right"
+	            android:layout_marginTop="10dp"
+	            android:layout_marginRight="20dp" />
+            
+            <LinearLayout style="@style/wrapper_horizontal" 
+                android:layout_width="260dp"
+                android:layout_gravity="right"
+	            android:layout_marginRight="20dp"
+	            android:background="#666">
+            <TextView
+                style="@style/h3_item"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:text="@string/Discount" />  
+            <TextView
+                android:id="@+id/discTotal"
+                style="@style/h3_item"
+                android:textSize="15sp"
+                android:textColor="#fff"
+                android:text="@string/defaultNum" />                 
+			
+			</LinearLayout>
+			</LinearLayout>
+
+            <LinearLayout
+                style="@style/wrapper_vertical"
+                android:background="@drawable/pink_border"
+                android:layout_marginTop="20dp" >
+
+                <RadioGroup
+                    android:id="@+id/rgOrderType"
+					style="@style/wrapper_vertical"
+					android:layout_width="fill_parent">
+	                    
+	                <RadioButton
+	                    android:id="@+id/rbDineIn"
+	                    style="@style/H3"
+	                    android:text="@string/DineIn" />
+	
+	                <RadioButton
+	                    android:id="@+id/rbTakeOut"
+	                    style="@style/H3"
+	                    android:text="@string/TakeOut" />
+	
+	                <RadioButton
+	                    android:id="@+id/rbDelivery"
+	                    style="@style/H3"
+	                    android:text="@string/Delivery" />
+				
+                </RadioGroup>
+                
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:text="@string/EnterCash"
+                android:onClick="enterCash"
+                style="@style/btn_orange_small" />
+
+            <Button
+                android:text="@string/ExactCash"
+                android:onClick="exactCash"
+                style="@style/btn_orange_small" />
+
+            <Button
+                android:text="@string/Cancel"
+                android:onClick="cancel"
+                style="@style/btn_red_small" />
+
+            <Button
+                android:text="@string/Confirm"
+                android:onClick="confirm"
+                style="@style/btn_green_small" />
+
+        </LinearLayout>
+
+    </LinearLayout>

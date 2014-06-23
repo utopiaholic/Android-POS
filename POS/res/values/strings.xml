@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ App Names ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <string name="app_name">PM POS</string>
+    <string name="action_settings"></string>
+    <string name="title_activity_main"></string>
+    <string name="title_activity_add_category"></string>
+    <string name="title_activity_edit_orders"></string>
+    <string name="title_activity_payment"></string>
+    <string name="title_activity_add_payment"></string>
+    <string name="title_activity_sale_options"></string>
+    <string name="title_activity_functions"></string>
+    <string name="title_activity_receipt_discount"></string>
+    <string name="title_activity_close_day"></string>
+    <string name="title_activity_cash_in_out"></string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Universal ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
+    <!-- Buttons -->
+    <string name="Close">Close</string>
+    <string name="Save">Save</string>
+    <string name="SaveUpdate">Save Update</string>
+    <string name="Confirm">Confirm</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Pay">Pay</string>
+    <string name="CloseDay">Close Day</string>
+    <string name="NoSale">No Sale</string>
+    <string name="CashInOut">Cash-in/out</string>
+    <string name="Account">Account</string>
+    <string name="Switch">Switch</string>
+    <string name="Lock">Lock</string>
+    <string name="SaleOptions">Sale Options</string>
+    <string name="Sync">Sync</string>
+
+    <!-- Denominations -->
+    <string name="php1000">1000:</string>
+    <string name="php500">500:</string>
+    <string name="php200">200:</string>
+    <string name="php100">100:</string>
+    <string name="php50">50:</string>
+    <string name="php20">20:</string>
+    <string name="php10">10:</string>
+    <string name="php5">5:</string>
+    <string name="php1">1:</string>
+    <string name="php25c">0.25:</string>
+    <string name="p1000">PHP 1000</string>
+    <string name="p500">PHP 500</string>
+    <string name="p200">PHP 200</string>
+    <string name="p100">PHP 100</string>
+    <string name="p50">PHP 50</string>
+    <string name="p20">PHP 20</string>
+    <string name="p10">PHP 10</string>
+    <string name="p5">PHP 5</string>
+    <string name="p1">PHP 1</string>
+    <string name="p25c">25c</string>
+
+    <!-- Keypad -->
+    <string name="defaultNum">0.00</string>
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="C">C</string>
+    <string name="Neg">-</string>
+    <string name="Dot">.</string>
+
+    <string-array name="discounts_array">
+        <item>0%</item>
+        <item>5%</item>
+        <item>10%</item>
+        <item>20%</item>
+        <item>50%</item>
+    </string-array>
+
+    <!-- Image -->
+    <string name="imagedesc">Image</string>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Activity ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <string name="SearchProduct">Search product...</string>
+    <string name="SearchCustomer">Search customer...</string>
+
+    <!-- Add Category -->
+    <string name="AddProductCategory">Add Product Category</string>
+    <string name="CategoryName">Category Name:</string>
+
+    <!-- Add Payment -->
+    <string name="AddPayment">Add Payment</string>
+    <string name="Amount">Amount:</string>
+
+    <!-- Close Day -->
+    <string name="EndOfDay">End of Day</string>
+    <string name="Counted">Counted:</string>
+    <string name="Register">Register:</string>
+    <string name="Deposit">Deposit:</string>
+    <string name="CashExpected">Cash Expected</string>
+    <string name="CashDifference">Cash Difference</string>
+    <string name="EndTheDay">End the Day</string>
+
+    <!-- Customer -->
+    <string name="ViewAllCustomers">Customers</string>
+    <string name="AddCustomer">Create Customer</string>
+    <string name="NewCustomer">Add Customer</string>
+    <string name="FirstName">First Name</string>
+    <string name="LastName">Last Name</string>
+    <string name="FullName">Name</string>
+    <string name="Address">Address</string>
+    <string name="AddressLandmark">Address Landmark</string>
+    <string name="TelNo">Tel No.</string>
+    <string name="MobileNo">Mobile No.</string>
+    <string name="CustomerName">Customer Name</string>
+
+    <!-- Discount -->
+    <string name="ReceiptDiscount">Receipt Discount</string>
+    <string name="DiscountPercent">Discount %</string>
+    <string name="DiscountPHP">Discount PHP</string>
+    <string name="DiscountType">Discount Type</string>
+
+    <!-- Functions -->
+    <string name="Functions">Functions</string>
+
+    <!-- Login -->
+    <string name="Login">Login</string>
+    <string name="EnterLogin">Enter your username and password:</string>
+
+    <!-- Orders -->
+    <string name="AllCat">All</string>
+    <string name="Name">Name</string>
+    <string name="Code">Code</string>
+    <string name="Price">Price</string>
+    <string name="Discount">Discount</string>
+    <string name="Disc">Disc.</string>
+    <string name="Quantity">Qty.</string>
+    <string name="NetTotal">Net Total</string>
+    <string name="TaxTotal">Tax Total</string>
+    <string name="Total">Total</string>
+    <string name="DiscountTotal">Discount Total</string>
+
+    <!-- Payment -->
+    <string name="Payment">Payment</string>
+    <string name="Cash">Cash</string>
+    <string name="Change">Change</string>
+    <string name="DineIn">Dine In</string>
+    <string name="TakeOut">Take Out</string>
+    <string name="Delivery">Delivery</string>
+    <string name="EnterCash">Enter Cash</string>
+    <string name="ExactCash">Exact Cash</string>
+
+    <!-- Sale Options -->
+    <string name="PrintReceipt">Print Receipt</string>
+    <string name="NewSale">New Sale</string>
+
+    <!-- Cash in/out -->
+    <string name="CashIn">Cash In</string>
+    <string name="CashOut">Cash Out</string>
+    <string name="title_activity_print_receipt">Print Receipt</string>
+
+</resources>

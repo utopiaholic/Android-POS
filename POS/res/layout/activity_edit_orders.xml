@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.malabon.pos"
+    android:id="@+id/Wrapper"
+    style="@style/popup"
+    android:layout_width="800dp"
+    tools:context=".EditOrders" >
+
+    <TextView
+        style="@style/H1"
+        android:id="@+id/editOrdersCustomerName"
+        android:text="@string/CustomerName" />
+
+    <TableLayout
+        style="@style/wrapper_table"
+        android:stretchColumns="1" >
+
+        <TableRow style="@style/table_header" >
+
+            <TextView
+                style="@style/h3_item"
+                android:text="@string/Name" />
+ 			<!-- 
+            <TextView
+                style="@style/h3_item"
+                android:text="@string/Code" /> /-->
+
+            <TextView
+                style="@style/h3_item"
+                android:text="@string/Price" />
+
+            <!-- TextView
+                style="@style/h3_item"
+                android:text="@string/Disc" /-->
+
+            <TextView
+                style="@style/h3_item"
+                android:text="@string/Quantity" />
+
+            <TextView
+                style="@style/h3_item"
+                android:text="" />
+        </TableRow>
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" >
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                style="@style/wrapper_table"
+                android:stretchColumns="1" >
+            </TableLayout>
+        </ScrollView>
+    </TableLayout>
+
+    <android.support.v7.widget.GridLayout
+        style="@style/wrapper_grid"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        app:columnCount="1"
+        app:rowCount="1" >
+
+        <LinearLayout
+            style="@style/wrapper_vertical"
+            app:layout_column="0"
+            app:layout_gravity="left"
+            app:layout_row="0" >
+
+            <Button
+                style="@style/btn_green_150"
+                android:onClick="pay"
+                android:text="@string/Pay" />
+
+            <Button
+                style="@style/btn_red_150"
+                android:onClick="close"
+                android:text="@string/Close" />
+        </LinearLayout>
+
+        <TableLayout
+            style="@style/wrapper_table"
+            android:layout_width="wrap_content"
+            app:layout_column="0"
+            app:layout_gravity="right"
+            app:layout_row="0" >
+
+            <TableRow style="@style/table_row" >
+
+                <TextView
+                    style="@style/h3_subtotal"
+                    android:text="@string/NetTotal" />
+
+                <TextView
+                    android:id="@+id/editOrdersNetTotal"
+                    style="@style/h3_subtotal_amt" />
+            </TableRow>
+
+            <TableRow style="@style/table_row" >
+
+                <TextView
+                    style="@style/h3_subtotal"
+                    android:text="@string/TaxTotal" />
+
+                <TextView
+                    android:id="@+id/editOrdersTaxTotal"
+                    style="@style/h3_subtotal_amt" />
+            </TableRow>
+
+            <TableRow style="@style/table_row_total" >
+
+                <TextView
+                    style="@style/h2_total"
+                    android:text="@string/Total" />
+
+                <TextView
+                    android:id="@+id/editOrdersTotal"
+                    style="@style/h2_total_amt" />
+            </TableRow>
+        </TableLayout>
+    </android.support.v7.widget.GridLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/table_row_total">
+			<TextView 
+			    android:id="@+id/cartItemName"
+				style="@style/h3_item"
+				android:text="Cheese burger" />
+			
+			<!--
+			<TextView 
+			    android:id="@+id/cartItemCode"
+				style="@style/h3_item"
+				android:text="XXX" /> -->
+			
+			<TextView 
+			    android:id="@+id/cartItemPrice"
+				style="@style/h3_item"
+				android:text="75.50" />
+			
+			<!-- TextView 
+			    android:id="@+id/cartItemDiscount"
+				style="@style/h3_item"
+				android:text="0%" /-->
+			
+			<TextView 
+			    android:id="@+id/cartItemQty"
+				style="@style/h3_item"
+				android:text="1" />
+</TableRow>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/table_row">
+        
+    <TextView 
+        style="@style/h3_item"
+        android:layout_weight="2"
+        android:id="@+id/cartItemName" />
+    <!--
+    <TextView 
+        style="@style/h3_item"
+        android:id="@+id/cartItemCode" /> /-->
+    
+    <TextView 
+        style="@style/h3_item"
+        android:id="@+id/cartItemPrice" />
+    <!--	
+    <TextView 
+        style="@style/h3_item"
+        android:id="@+id/cartItemDiscount" /> /-->
+    
+    <LinearLayout
+        style="@style/wrapper_horizontal" >	                
+
+        <ImageButton
+            android:id="@+id/cartLessQty"
+            style="@style/image_button"
+            android:src="@drawable/arrow_down_float" 
+            android:contentDescription="@string/imagedesc" />
+        
+    </LinearLayout>  
+    
+    <TextView
+          android:id="@+id/cartItemQty"
+          style="@style/textbox_numeric"
+          android:layout_width="10dp"
+          android:layout_marginTop="0dp" />
+    
+     <LinearLayout
+        style="@style/wrapper_horizontal" >	                
+
+        <ImageButton
+            android:id="@+id/cartMoreQty"
+            style="@style/image_button"
+            android:src="@drawable/arrow_up_float" 
+            android:contentDescription="@string/imagedesc" />
+        
+    </LinearLayout>  
+    
+    <LinearLayout
+        style="@style/wrapper_horizontal" >	                
+
+
+        <ImageButton
+            android:id="@+id/cartBtnDelete"
+            style="@style/image_button"
+            android:src="@drawable/ic_menu_delete" 
+            android:contentDescription="@string/imagedesc"/>
+        
+    </LinearLayout>  
+</TableRow>

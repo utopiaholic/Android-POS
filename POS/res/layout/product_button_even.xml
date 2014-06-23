@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.malabon.pos"
+    style="@style/item_wrapper_even">
+    
+	<TextView
+         android:id="@+id/prodBtnItemName"
+         android:maxLength="20"
+         style="@style/h3_product"/>
+
+     <TextView
+	     android:id="@+id/prodBtnItemPrice"
+         style="@style/h3_price"/>
+</LinearLayout>

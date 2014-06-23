@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.malabon.pos"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/POS_Theme" >
+        <activity
+            android:name="com.malabon.pos.MainActivity"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.malabon.pos.Login"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.malabon.pos.AddCategory"
+            android:parentActivityName="com.malabon.pos.MainActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.malabon.pos.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.malabon.pos.EditOrders"
+            android:parentActivityName="com.malabon.pos.MainActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.malabon.pos.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.malabon.pos.PaymentActivity"
+            android:parentActivityName="com.malabon.pos.MainActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.malabon.pos.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.malabon.pos.AddPayment"
+            android:parentActivityName="com.malabon.pos.PaymentActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.malabon.pos.Payment" />
+        </activity>
+        <activity
+            android:name="com.malabon.pos.SaleOptions"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.malabon.pos.Functions"
+            android:parentActivityName="com.malabon.pos.MainActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.malabon.pos.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.malabon.pos.ReceiptDiscount"
+            android:parentActivityName="com.malabon.pos.SaleOptions"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.malabon.pos.SaleOptions" />
+        </activity>
+        <activity
+            android:name="com.malabon.pos.CloseDay"
+            android:parentActivityName="com.malabon.pos.Functions"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.malabon.pos.Functions" />
+        </activity>
+        <activity
+            android:name="com.malabon.pos.SignIn"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="com.malabon.pos.ViewCustomer"
+            android:parentActivityName="com.malabon.pos.MainActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.malabon.pos.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.malabon.pos.AddCustomer"
+            android:parentActivityName="com.malabon.pos.ViewCustomer"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.malabon.pos.ViewCustomer" />
+        </activity>
+        <activity
+            android:name="com.malabon.pos.CashInOut"
+            android:label="@string/title_activity_cash_in_out"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.malabon.pos.PrintReceipt"
+            android:label="@string/title_activity_print_receipt"
+            android:parentActivityName="com.malabon.pos.MainActivity"
+            android:theme="@android:style/Theme.Dialog" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.malabon.pos.MainActivity" />
+        </activity>
+    </application>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+</manifest>

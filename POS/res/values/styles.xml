@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="POS_Theme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- Custom Styles -->
+
+    <style name="Wrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">800dp</item>
+        <item name="android:paddingBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingTop">@dimen/activity_vertical_margin</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">#111</item>
+    </style>
+
+    <style name="popup">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/popup_bg</item>
+    </style>
+    
+    <style name="wrapper_grid">
+        <item name="android:layout_width">800dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">20dp</item>
+    </style>
+    
+    <style name="wrapper_grid_common">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">20dp</item>
+    </style>
+    
+    <style name="wrapper_horizontal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    
+    <style name="wrapper_vertical">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+	
+    <style name="header_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="H1" parent="header_text">        
+        <item name="android:textSize">50sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="H2" parent="header_text">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+    
+    <style name="H3" parent="header_text">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+    
+    <style name="receiptText">        
+        <item name="android:textColor">#000</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="separator">
+        <item name="android:layout_height">0.2dp</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:background">#000</item>
+    </style>
+
+    <style name="field_label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#999</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="textbox_common">
+        <item name="android:layout_width">350dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:inputType">text</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="textbox_numeric" parent="textbox_common">
+        <item name="android:inputType">numberDecimal</item>
+    </style>
+    
+    <style name="textbox_password" parent="textbox_common">
+        <item name="android:inputType">textPassword</item>
+    </style>
+    
+    <style name="textbox_email" parent="textbox_common">
+        <item name="android:inputType">textEmailAddress</item>
+    </style>
+	
+    <style name="button">
+        <item name="android:layout_margin">5dp</item>
+	    <item name="android:textColor">#ffffff</item>
+	    <item name="android:gravity">center</item>
+	    <item name="android:shadowColor">#000000</item>
+	    <item name="android:shadowDx">1</item>
+	    <item name="android:shadowDy">1</item>
+	    <item name="android:shadowRadius">2</item>
+    </style>   
+    
+    <style name="item_wrapper" parent="btn_small">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">100dp</item>        
+	    <item name="android:orientation">vertical</item>	
+	    <item name="android:layout_margin">5dp</item>
+    </style>
+    
+    <style name="item_wrapper_odd" parent="item_wrapper">
+	    <item name="android:background">@drawable/pink_border</item>
+    </style>
+    
+    <style name="item_wrapper_even" parent="item_wrapper">
+	    <item name="android:background">@drawable/blue_border</item>
+    </style>
+        
+    <style name="btn_small" parent="button">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">75dp</item>        
+	    <item name="android:textSize">30sp</item>	    
+    </style>
+    
+    <style name="btn_orange_small" parent="btn_small">
+        <item name="android:background">@drawable/orange_button</item>
+        <!-- #FFAE00 -->
+    </style>
+
+    <style name="btn_red_small" parent="btn_small">
+        <item name="android:background">@drawable/red_button</item>
+        <!-- #FF4D1C -->
+    </style>
+
+    <style name="btn_green_small" parent="btn_small">
+        <item name="android:background">@drawable/green_button</item>
+        <!-- #48FF00 -->
+    </style>
+    
+    <style name="btn_gray_small" parent="btn_small">
+        <item name="android:background">@drawable/gray_button</item>
+        <!-- #888 -->
+    </style>
+    
+    <style name="btn_gray_fit" parent="btn_gray_small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="btn_gray_150" parent="btn_gray_small">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    
+    <style name="btn_orange_150" parent="btn_orange_small">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    
+    <style name="btn_green_150" parent="btn_green_small">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    
+    <style name="btn_red_150" parent="btn_red_small">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+	
+    <style name="user_thumbnail">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:src">@drawable/ic_launcher</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+    
+    <style name="image_button_small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    
+    <style name="image_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+    
+    <style name="table_header">
+	    <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="table_row" parent="table_header">
+        <item name="android:background">#666</item>
+    </style>
+    
+    <style name="receipt_table_row" parent="table_header">
+	    <item name="android:background">#fff</item>
+    </style>
+    
+    <style name="wrapper_table">
+        <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">match_parent</item>
+    </style>
+    
+    <style name="h3_item" parent="H3">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    
+    <style name="h3_subtotal" parent="H3">
+        <item name="android:textColor">#000</item>
+    </style>
+    
+    <style name="h3_price" parent="H3">
+        <item name="android:background">@drawable/popup_bg</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="h3_product" parent="H3">
+        <item name="android:layout_margin">0dp</item>
+    </style>
+    
+    <style name="h2_total" parent="H2">
+        <item name="android:textColor">#999</item>
+    </style>
+    
+    <style name="h3_subtotal_amt" parent="H3">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">right|center_vertical</item>
+    </style>
+    
+    <style name="h2_total_amt" parent="H2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">right|center_vertical</item>
+    </style>
+    
+    <style name="table_row_total" parent="table_row">
+        <item name="android:background">#333</item>
+    </style>
+
+</resources>

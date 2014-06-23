@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Wrapper"
+    style="@style/popup"
+    android:layout_width="800dp" >
+
+    
+    <TextView
+        style="@style/H1"
+        android:text="@string/ViewAllCustomers" />
+
+    <TableLayout
+        style="@style/wrapper_table"
+        android:stretchColumns="1" >
+
+        <TableRow style="@style/table_header" >
+
+            <TextView
+                style="@style/h3_item"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:text="@string/FullName" />
+
+            <TextView
+                style="@style/h3_item"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:text="@string/TelNo" />
+
+            <TextView
+                style="@style/h3_item"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:text="@string/MobileNo" />
+        </TableRow>
+    </TableLayout>
+
+    <ScrollView
+        android:id="@+id/CustomersScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="450dp" >
+
+        <TableLayout
+            android:id="@+id/listCustomer"
+            android:layout_width="fill_parent"
+            android:layout_height="450dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+    </ScrollView>
+
+    <LinearLayout
+        style="@style/wrapper_horizontal"
+        android:layout_gravity="center" >
+		
+        <EditText
+		    android:id="@+id/txtSearchCustomer"
+		    android:layout_width="300dip"
+		    android:layout_height="wrap_content"
+		    android:textSize="20sp"
+		    android:inputType="text"
+		    android:textColor="#999"
+		    android:textStyle="italic"
+		    android:padding="12dp"
+		    android:layout_gravity="bottom">
+		</EditText>
+		<ImageButton 
+              style="@style/image_button_small"
+              android:layout_height="50dp"
+              android:src="@drawable/ic_menu_search" 
+              android:contentDescription="@string/imagedesc"
+              android:onClick="doSearchCustomer"
+              android:layout_gravity="bottom" />
+		<ImageButton
+                style="@style/image_button_small"
+                android:layout_height="50dp"
+                android:contentDescription="@string/imagedesc"
+                android:onClick="showAllCustomers"
+                android:src="@drawable/btn_star_big_off"
+                android:layout_gravity="bottom" />
+        
+        <Button
+            android:id="@+id/btnAddCustomer"
+            style="@style/btn_green_150"
+            android:focusable="false"
+            android:onClick="addCustomer"
+            android:text="@string/NewCustomer" />
+
+        <Button
+            style="@style/btn_red_150"
+            android:onClick="cancel"
+            android:text="@string/Cancel" />
+    </LinearLayout>
+
+</LinearLayout>

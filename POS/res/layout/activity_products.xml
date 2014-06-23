@@ -1,0 +1,27 @@
+<android.support.v7.widget.GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.malabon.pos"
+    tools:context=".Products"
+    android:id="@+id/productsGrid"
+    style="@style/wrapper_grid"
+    android:layout_gravity="top"
+    app:columnCount="4"
+    app:orientation="horizontal">
+    <!-- 
+    <LinearLayout
+	                style="@style/item_wrapper_even"
+	                app:layout_row="0"
+	                app:layout_column="3" >
+
+	                <TextView
+	                    style="@style/h3_product"
+	                    android:text="Milk Shake" />
+
+	                <TextView
+	                    style="@style/h3_price"
+	                    android:text="34.00" />
+
+	            </LinearLayout> -->
+    
+</android.support.v7.widget.GridLayout>

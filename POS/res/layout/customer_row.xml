@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/table_row"
+    android:layout_width="800dp" >
+
+    <LinearLayout style="@style/wrapper_horizontal" >
+
+        <ImageButton
+            android:id="@+id/btnSelectCustomer"
+            style="@style/image_button"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/ic_menu_mark" 
+            android:contentDescription="@string/imagedesc" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/customer_id"
+        style="@style/h3_item"
+        android:text="ID"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvFullName"
+        style="@style/h3_item"
+        android:layout_width="0dip"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tvTelNo"
+        style="@style/h3_item"
+        android:layout_width="0dip"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tvMobileNo"
+        style="@style/h3_item"
+        android:layout_width="0dip"
+        android:layout_weight="1" />
+
+    <LinearLayout style="@style/wrapper_horizontal" >
+
+        <ImageButton
+            android:id="@+id/btnUpdateCustomer"
+            style="@style/image_button"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/ic_menu_edit" 
+            android:contentDescription="@string/imagedesc" />
+    </LinearLayout>
+
+</TableRow>
